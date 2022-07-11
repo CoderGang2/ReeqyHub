@@ -28,11 +28,21 @@ DahoodSectionTwo:NewButton("Crostide", "A selling gui for Dahood", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
 end)
 
+-- Universal Tab
+local UniTab = Window:NewTab("Universal")
+local UniSection = UniTab:NewSection("Universal Scripts")
+
 -- Credits Tab
 local CreditsTab = Window:NewTab("Credits")
 local CreditsSection = CreditsTab:NewSection("Credits")
 
 CreditsSection:NewLabel("Created by Ivory")
+CreditsSection:NewButton("Contribute?", "Press this button to copy a link into your clipboard to contribute to the project", function()
+    -- Copy a like to the clipboard
+    game:GetService("Players").LocalPlayer:ClipboardService:SetClipboardText("https://github.com/CoderGang2/ReeqyHub/blob/main/ivorhub.lua")
+    -- Kick the player saying that they have been copied
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Copied the link to the clipboard! Paste this into your browser and code!", "All")
+end)
 
 
 -- loadstring(Game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/uni1.lua"))()
