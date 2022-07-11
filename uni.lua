@@ -74,39 +74,48 @@ MainSection3:NewButton("SwagMode😎", "DaHood", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/BETA_Swagmode'))()
 end)
 
-MainSection3:NewButton("Dimag-X", "DaHood", function()
+MainSection3:NewButton("Dimag-X💎", "DaHood", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Dimag16/DimagX_NEW/main/dimagx', true))()
 end)
 
 
-MainSection3:NewButton("Plasma", "DaHood", function()
+MainSection3:NewButton("Plasma🎈", "DaHood", function()
 loadstring(game:HttpGet("https://iexploit.xyz/scripts/plasma/loader"))()
 end)
 
 
 
-MainSection3:NewButton("RayX", "DaHood", function()
+MainSection3:NewButton("RayX💻", "DaHood", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
 end)
 
 
-MainSection3:NewButton("Artic v9.7", "DaHood", function()
+MainSection3:NewButton("Artic v9.7🔥", "DaHood", function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
 end)
 
 
 
-MainSection3:NewButton("Aim Lock", "DaHood", function()
+MainSection3:NewButton("Aim Lock🎯🔫", "DaHood", function()
 -- [[ Launcher ]] --
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/HuskyLimited/Script/main/QitkotLock.lua', true))()
 end)
 
+MainSection3:NewButton("FADED🅾🅿", "DaHood", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+MainSection3:NewButton("Destiny🌙", "DaHood", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
+end)
+
+
 
 
 local MainSection3 = main:NewSection("Selling GUI'S")
 
-MainSection3:NewButton("Crostide", "DaHood", function()
+MainSection3:NewButton("Crostide💸", "DaHood", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
 end)
 
