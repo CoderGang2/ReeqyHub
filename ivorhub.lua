@@ -47,6 +47,7 @@ local CreditsTab = Window:NewTab("Credits")
 local CreditsSection = CreditsTab:NewSection("Credits")
 
 CreditsSection:NewLabel("Created by Ivory")
+CreditsSection:NewLabel("Discord : KzZVa6qCnM")
 
 
 
