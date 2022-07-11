@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TITLE", "Synapse")
+local Window = Library.CreateLib("IvorHub", "Synapse")
 
 -- Jailbreak Tab
 local JbTab = Window:NewTab("Jailbreak")
