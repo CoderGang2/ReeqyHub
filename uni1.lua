@@ -15,9 +15,5 @@ JbSection:NewButton("Auto Farm", "Auto Farm - The Jailbreak Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxscriptidk1"))()
 end)
 
--- Credits Tab
-local CreditsTab = Window:NewTab("Credits")
-local CreditsSection = CreditsTab:NewSection("Credits")
 
-local TextBox = CreditsSection:NewTextBox("Credits")
-TextBox:SetText("Created by Ivory")
+-- loadstring(Game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/uni1.lua"))()
