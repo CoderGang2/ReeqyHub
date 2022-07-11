@@ -25,6 +25,12 @@ MainSection1:NewButton("Bolts Hub", "Arsenal", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
 end)
 
+MainSection1:NewButton("VG Hub", "Arsenal", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+
+
 
 
 MainSection:NewButton("Vynixius", "Jailbreak", function()
