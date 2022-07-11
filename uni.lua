@@ -11,18 +11,18 @@ local MainSection2 = main:NewSection("Main")
 
 
 --MAIN
-local main = Window:NewTab("Jailbreak")
+local main = Window:NewTab("Jailbreak🚗")
 local MainSection = main:NewSection("Jailbreak")
 
 --Arsenal
-local Arsenal = Window:NewTab("Arsenal")
+local Arsenal = Window:NewTab("Arsenal🔫")
 local MainSection1 = Arsenal:NewSection("Arsenal")
 
 --DaHood
-local main = Window:NewTab("DaHood")
+local main = Window:NewTab("DaHood❤")
 local MainSection3 = main:NewSection("DaHood")
 
-local Tab = Window:NewTab("Credits")
+local Tab = Window:NewTab("Credits✍🏻")
 local CreditsSection = Tab:NewSection("Credits")
 
 CreditsSection:NewButton("https://discord.gg/uZY2dzCFf2", "Discord", function()
@@ -31,11 +31,11 @@ end)
 
 
 
-MainSection1:NewButton("Bolts Hub", "Arsenal", function()
+MainSection1:NewButton("Bolts Hub⚡", "Arsenal", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
 end)
 
-MainSection1:NewButton("VG Hub", "Arsenal", function()
+MainSection1:NewButton("VG Hub🏀", "Arsenal", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
@@ -43,12 +43,12 @@ end)
 
 
 
-MainSection:NewButton("Vynixius", "Jailbreak", function()
+MainSection:NewButton("Vynixius💚", "Jailbreak", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua"))()
 end)
 
 
-MainSection:NewButton("Auto Farm", "Jailbreak", function()
+MainSection:NewButton("Auto Farm🤑", "Jailbreak", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))()    end)
 
 
