@@ -18,8 +18,15 @@ end)
 -- Dahood tab
 local DahoodTab = Window:NewTab("DaHood")
 local DahoodSection = DahoodTab:NewSection("DaHood Scripts")
+local DahoodSectionTwo = DahoodTab:NewSection("Selling Scripts")
 
 DahoodSection:NewButton("SwagMode", "SwagMode", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
 end)
+
+DahoodSectionTwo:NewButton("Crostide", "A selling gui for Dahood", function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
+end)
+
+
 -- loadstring(Game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/uni1.lua"))()
