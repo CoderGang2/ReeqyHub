@@ -24,9 +24,14 @@ DahoodSection:NewButton("SwagMode", "SwagMode", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
 end)
 
+DahoodSection:NewButton("Plasma", "Another Swagmode Copy", function()
+    loadstring(game:HttpGet("https://iexploit.xyz/scripts/plasma/loader"))()
+end)
+
 DahoodSectionTwo:NewButton("Crostide", "A selling gui for Dahood", function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
 end)
+
 
 
 -- loadstring(Game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/uni1.lua"))()
