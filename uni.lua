@@ -55,7 +55,7 @@ end)
 
 
 MainSection3:NewButton("SwagMode😎", "DaHood", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/BETA_Swagmode'))()
 end)
 
 MainSection3:NewButton("Dimag-X", "DaHood", function()
