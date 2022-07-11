@@ -1,6 +1,9 @@
 
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("ReeqyHub", "Ocean")
+
+
 
 --MAIN
 local main = Window:NewTab("Universal")
@@ -18,6 +21,13 @@ local MainSection1 = Arsenal:NewSection("Arsenal")
 --DaHood
 local main = Window:NewTab("DaHood")
 local MainSection3 = main:NewSection("DaHood")
+
+local Tab = Window:NewTab("Credits")
+local CreditsSection = Tab:NewSection("Credits")
+
+CreditsSection:NewButton("https://discord.gg/uZY2dzCFf2", "Discord", function()
+    print("Clicked")
+end)
 
 
 
@@ -91,6 +101,9 @@ MainSection3:NewButton("Aim Lock", "DaHood", function()
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/HuskyLimited/Script/main/QitkotLock.lua', true))()
 end)
+
+
+
 local MainSection3 = main:NewSection("Selling GUI'S")
 
 MainSection3:NewButton("Crostide", "DaHood", function()
@@ -101,7 +114,5 @@ end)
 MainSection3:NewButton("Crashing (Swagmode)", "DaHood", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
 end)
-
-
 
 
