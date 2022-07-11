@@ -1,6 +1,18 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("IvorHub", "Synapse")
 
+-- Universal Tab
+local UniTab = Window:NewTab("Universal")
+local UniSection = UniTab:NewSection("Universal Scripts")
+
+UniSection:NewButton("AimLock", "Universal", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
+end)
+
+UniSection:NewButton("CMD-X", "Universal", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
 -- Jailbreak Tab
 local JbTab = Window:NewTab("Jailbreak")
 local JbSection = JbTab:NewSection("Jailbreak Scripts")
@@ -28,9 +40,7 @@ DahoodSectionTwo:NewButton("Crostide", "A selling gui for Dahood", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
 end)
 
--- Universal Tab
-local UniTab = Window:NewTab("Universal")
-local UniSection = UniTab:NewSection("Universal Scripts")
+
 
 -- Credits Tab
 local CreditsTab = Window:NewTab("Credits")
