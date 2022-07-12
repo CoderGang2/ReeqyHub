@@ -6,6 +6,7 @@ local PreMSection = PreMtab:NewSection("Premium Scripts")
 
 PreMSection:NewTextBox("Code", "Please enter the code you were given when you bought this", function()
     local code = PreMSection:GetTextBox("Code")
+    if code == "Kavo" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/ivorhubpre.lua"))()
     else
         game:GetService("StarterGui"):SetCore("SendNotification", {
