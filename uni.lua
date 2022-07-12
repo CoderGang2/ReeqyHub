@@ -1,7 +1,25 @@
-
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("ReeqyHub", "Ocean")
+
+
+
+
+
+OrionLib:MakeNotification({
+	Name = "Discord",
+	Content = "discord.gg/s9C9dWhAqV",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+
+
+
+
+
+
 
 
 
@@ -30,6 +48,18 @@ CreditsSection:NewButton("https://discord.gg/uZY2dzCFf2", "Discord", function()
 end)
 
 
+CreditsSection:NewButton("Reeqy#9499", "Discord", function()
+    print("Clicked")
+end)
+
+
+
+CreditsSection:NewButton("Credits to all script owners", "Discord", function()
+    print("Clicked")
+end)
+
+
+
 
 MainSection1:NewButton("Bolts Hub⚡", "Arsenal", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
@@ -39,6 +69,10 @@ MainSection1:NewButton("VG Hub🏀", "Arsenal", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
 
+
+MainSection3:NewButton("Autofarm", "Dahood", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/racemodex/my-scripts/master/dahoodautofarm", true))()
+end)
 
 
 
