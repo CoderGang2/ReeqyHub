@@ -10,28 +10,51 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+-- Premium Mode
+function PremiumScript() 
+	print("Loading Premium Script for IvoryHub")
+end
+
+
 -- Premium Tab
 local PreTab = Window:NewTab("Premium")
 local PreSection = PreTab:NewSection("Premium")
 
-PreSection:NewTextBox("Please enter your code", "Code input", function()
-	local Code = PreSection:GetTextBox("Code input")
-	if Code == "XFGXCJHFDDJKDEF" then
+PreSection:NewButton("Enable Premium", "Premium Mode", function() 
+
+	local Username = game.Players.LocalPlayer.Name
+
+	if Username == "1ro4dev" then
 		OrionLib:MakeNotification({
-			Name = "Welcome!",
-			Content = "You have successfully purchased the premium version of this script." .. "\n" .. "Enjoy!",
+			Name = "Enabled Premium",
+			Content = "You have Premium enabled",
 			Image = "rbxassetid://4483345998",
 			Time = 5
 		})
-	else
+		PremiumScript()
+	else if Username == "RileyBoyJones2" then
 		OrionLib:MakeNotification({
-			Name = "Sorry...",
-			Content = "The code you entered is incorrect.",
+			Name = "Enabled Premium",
+			Content = "You have Premium enabled",
 			Image = "rbxassetid://4483345998",
 			Time = 5
 		})
+		PremiumScript()
 	end
+	
+	if Username ~= "RileyBoyJones2" then
+	    if Username ~= "1ro4dev" then
+		    OrionLib:MakeNotification({
+			    Name = "Premium is not avalible for this user",
+			    Content = "You do not have access to this",
+			    Image = "rbxassetid://4483345998",
+			    Time = 5
+		    })
+	    end    
+	end
+end
 end)
+
 
 -- Jailbreak Tab
 local JbTab = Window:NewTab("Jailbreak")
