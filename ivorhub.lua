@@ -10,6 +10,28 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+-- Premium Tab
+local PreTab = Window:NewTab("Premium")
+local PreSection = PreTab:NewSection("Premium")
+
+PreSection:NewTextBox("Please enter your code", "Code input", function()
+	local Code = PreSection:GetTextBox("Code input")
+	if Code == "XFGXCJHFDDJKDEF" then
+		OrionLib:MakeNotification({
+			Name = "Welcome!",
+			Content = "You have successfully purchased the premium version of this script." .. "\n" .. "Enjoy!",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+	else
+		OrionLib:MakeNotification({
+			Name = "Sorry...",
+			Content = "The code you entered is incorrect.",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+	end
+end
+
 -- Jailbreak Tab
 local JbTab = Window:NewTab("Jailbreak")
 local JbSection = JbTab:NewSection("Jailbreak")
@@ -50,7 +72,16 @@ DhSection:NewButton("Dimag-X", "Dahood cheat utility", function()
 end)
 
 DhSection:NewButton("infiniteYield", "Dahood yield modifier", function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	OrionLib:MakeNotification({
+		Name = "Script Disabled",
+		Content = "You can not start this script because it is not suted for this game",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
+end)
+
+DhSection:NewButton("AimLock-V8", "Lock on to targets", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
 	OrionLib:MakeNotification({
 		Name = "Script Started",
 		Content = "Script has started",
@@ -68,6 +99,7 @@ DhSection:NewButton("SwagMode", "Dahood Cheat utility", function()
 		Time = 5
 	})
 end)
+
 
 -- Arsenal Tab
 local AlTab = Window:NewTab("Arsenal")
