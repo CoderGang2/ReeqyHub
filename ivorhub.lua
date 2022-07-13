@@ -58,3 +58,38 @@ DhSection:NewButton("infiniteYield", "Dahood yield modifier", function()
 		Time = 5
 	})
 end)
+
+DhSection:NewButton("SwagMode", "Dahood Cheat utility", function() 
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/BETA_Swagmode'))()
+	OrionLib:MakeNotification({
+		Name = "Script Started",
+		Content = "Script has started",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
+end)
+
+-- Arsenal Tab
+local AlTab = Window:NewTab("Arsenal")
+local AlSection = AlTab:NewSection("Arsenal")
+
+AlSection:NewButton("BoltHub", "Arsenal Cheat script", function() 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
+	OrionLib:MakeNotification({
+		Name = "Script Started",
+		Content = "Script has started",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
+end)
+
+AlSection:NewButton("V.G hub", "Arsenal cheat script", function() 
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+	OrionLib:MakeNotification({
+		Name = "Script Started",
+		Content = "Script has started",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
+end)
+
