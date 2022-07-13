@@ -29,6 +29,7 @@ PreSection:NewTextBox("Please enter your code", "Code input", function()
 			Content = "The code you entered is incorrect.",
 			Image = "rbxassetid://4483345998",
 			Time = 5
+		})
 	end
 end
 
