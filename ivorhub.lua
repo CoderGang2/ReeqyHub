@@ -13,6 +13,7 @@ OrionLib:MakeNotification({
 -- Premium Mode
 function PremiumScript() 
 	print("Loading Premium Script for IvoryHub")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/PreIvorHub.lua"))
 end
 
 
