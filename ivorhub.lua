@@ -31,7 +31,7 @@ PreSection:NewTextBox("Please enter your code", "Code input", function()
 			Time = 5
 		})
 	end
-end
+end)
 
 -- Jailbreak Tab
 local JbTab = Window:NewTab("Jailbreak")
