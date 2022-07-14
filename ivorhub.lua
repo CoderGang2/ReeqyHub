@@ -13,7 +13,14 @@ OrionLib:MakeNotification({
 -- Premium Mode
 function PremiumScript() 
 	print("Loading Premium Script for IvoryHub")
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/PreIvorHub.lua"))
+	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+	local Window = Library.CreateLib("IvoryHub Premium", "Synapse")
+	OrionLib:MakeNotification({
+		Name = "Script Start",
+		Content = "IvoryHub Premium has loaded.",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+	})
 end
 
 
@@ -25,15 +32,7 @@ PreSection:NewButton("Enable Premium", "Premium Mode", function()
 
 	local Username = game.Players.LocalPlayer.Name
 
-	if Username == "1ro4dev" then
-		OrionLib:MakeNotification({
-			Name = "Enabled Premium",
-			Content = "You have Premium enabled",
-			Image = "rbxassetid://4483345998",
-			Time = 5
-		})
-		PremiumScript()
-	else if Username == "RileyBoyJones2" then
+	if Username == "RileyBoyJones2" then
 		OrionLib:MakeNotification({
 			Name = "Enabled Premium",
 			Content = "You have Premium enabled",
@@ -44,14 +43,12 @@ PreSection:NewButton("Enable Premium", "Premium Mode", function()
 	end
 	
 	if Username ~= "RileyBoyJones2" then
-	    if Username ~= "1ro4dev" then
-		    OrionLib:MakeNotification({
-			    Name = "Premium is not avalible for this user",
-			    Content = "You do not have access to this",
-			    Image = "rbxassetid://4483345998",
-			    Time = 5
-		    })
-	    end    
+		OrionLib:MakeNotification({
+			Name = "Failed",
+			Content = "You do not have access to this",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})	
 	end
 end
 end)
