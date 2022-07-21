@@ -15,7 +15,7 @@ OrionLib:MakeNotification({
 })
 
 
-
+--9693183775  --4483345998
 
 
 
@@ -26,6 +26,10 @@ OrionLib:MakeNotification({
 --MAIN
 local main = Window:NewTab("Universal")
 local MainSection2 = main:NewSection("Main")
+
+
+
+
 
 
 --MAIN
@@ -40,8 +44,32 @@ local MainSection1 = Arsenal:NewSection("Arsenal")
 local main = Window:NewTab("DaHood❤")
 local MainSection3 = main:NewSection("DaHood")
 
+--Avatar
+local Avatar = Window:NewTab("Avatar")
+local MainSection90 = Avatar:NewSection("Avatar")
+
+
+
+
+
 local Tab = Window:NewTab("Credits✍🏻")
 local CreditsSection = Tab:NewSection("Credits")
+
+
+
+
+
+
+
+
+
+--Avatar
+MainSection90:NewButton("Free Limiteds💰🤑", "Avatar", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ForestIsPro/VisualWorks/main/FreeHats'))()
+    end)
+
+
+
 
 CreditsSection:NewButton("https://discord.gg/uZY2dzCFf2", "Discord", function()
     print("Clicked")
@@ -129,7 +157,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaH
 end)
 
 
-MainSection3:NewButton("Artic v9.7🔥", "DaHood", function()
+MainSection3:NewButton("Arctic v9.7🔥", "DaHood", function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
 end)
 
@@ -162,5 +190,11 @@ end)
 MainSection3:NewButton("Crashing (Swagmode)", "DaHood", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
 end)
+
+
+
+
+
+
 
 
