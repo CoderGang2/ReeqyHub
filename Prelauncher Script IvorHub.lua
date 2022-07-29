@@ -1,1 +1,0 @@
-loadstring(Game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/ivorhub.lua"))()
