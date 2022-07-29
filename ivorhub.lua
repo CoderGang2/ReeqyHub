@@ -39,7 +39,7 @@ JailBreakButton.Text = "JailBreak"
 JailBreakButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 JailBreakButton.TextSize = 14.000
 JailBreakButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/IvorHub/JailBreakSelector.lua"))
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CoderGang2/ReeqyHub/main/IvorHub/JailBreakSelector.lua"))
     script.Parent.Parent.Frame.Visible = false
 end)
 
